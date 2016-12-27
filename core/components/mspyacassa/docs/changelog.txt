@@ -1,0 +1,5 @@
+Changelog for mspYaCassa
+
+2.0.3-beta
+==============
+- Initial

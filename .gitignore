@@ -1,0 +1,4 @@
+# ignore some MODX files
+/setup
+core/cache/
+core/packages/*/

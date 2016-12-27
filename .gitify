@@ -1,0 +1,134 @@
+data_directory: _data/
+backup_directory: _backup/
+data:
+    contexts:
+        class: modContext
+        primary: key
+    context_settings:
+        class: modContextSetting
+        primary:
+            - context_key
+            - key
+    template_variables:
+        class: modTemplateVar
+        primary: name
+    template_variables_access:
+        class: modTemplateVarTemplate
+        primary:
+            - tmplvarid
+            - templateid
+    content:
+        type: content
+        exclude_keys:
+            - editedby
+            - editedon
+        truncate_on_force:
+            - modTemplateVarResource
+    categories:
+        class: modCategory
+        primary: category
+        truncate_on_force:
+            - modCategoryClosure
+    templates:
+        class: modTemplate
+        primary: templatename
+        extension: .html
+    chunks:
+        class: modChunk
+        primary: name
+        extension: .html
+    snippets:
+        class: modSnippet
+        primary: name
+        extension: .php
+    plugins:
+        class: modPlugin
+        primary: name
+        extension: .php
+    plugin_events:
+        class: modPluginEvent
+        primary:
+            - pluginid
+            - event
+    events:
+        class: modEvent
+        primary: name
+    namespaces:
+        class: modNamespace
+        primary: name
+    system_settings:
+        class: modSystemSetting
+        primary: key
+        exclude_keys:
+            - editedon
+    extension_packages:
+        class: modExtensionPackage
+        primary: namespace
+        exclude_keys:
+            - created_at
+            - updated_at
+    fc_sets:
+        class: modFormCustomizationSet
+        primary: id
+    fc_profiles:
+        class: modFormCustomizationProfile
+        primary: id
+    fc_profile_usergroups:
+        class: modFormCustomizationProfileUserGroup
+        primary:
+            - usergroup
+            - profile
+    fc_action_dom:
+        class: modActionDom
+        primary:
+            - set
+            - name
+    mediasources:
+        class: modMediaSource
+        primary: id
+    mediasource_elements:
+        class: sources.modMediaSourceElement
+        primary:
+            - source
+            - object_class
+            - object
+            - context_key
+    dashboards:
+        class: modDashboard
+        primary:
+            - id
+            - name
+    dashboard_widgets:
+        class: modDashboardWidget
+        primary: id
+    dashboard_widget_placement:
+        class: modDashboardWidgetPlacement
+        primary:
+            - dashboard
+            - widget
+packages:
+    modx.com:
+        service_url: 'http://rest.modx.com/extras/'
+        description: 'The official MODX transport facility for 3rd party components.'
+        packages:
+            - ace-1.6.4-pl
+            - formit-2.2.7-pl
+            - instagramlatestposts-1.2.0-pl
+            - migx-2.9.6-pl
+            - pthumb-2.3.3-pl
+            - resizer-1.0.1-pl
+            - tinymcerte-1.1.0-pl
+    modstore.pro:
+        service_url: 'http://modstore.pro/extras/'
+        username: Dim.davidoff@gmail.com
+        api_key: .modstore.pro.key
+        packages:
+            - ajaxform-1.1.3-pl
+            - bannery-1.3.2-pl
+            - jevix-1.2.0-pl2
+            - minishop2-2.4.6-pl1
+            - mspyacassa-2.0.3-beta
+            - pdotools-2.1.12-pl
+            - tickets-1.6.8-pl1
+            - videogallery-1.0.5-beta
+            - ytranslit-1.1.2-pl
