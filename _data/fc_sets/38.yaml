@@ -1,0 +1,8 @@
+id: 38
+profile: 1
+action: resource/create
+active: 1
+template: 17
+constraint: '*id'
+constraint_field: parent
+constraint_class: modResource

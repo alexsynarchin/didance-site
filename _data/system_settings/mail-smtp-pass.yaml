@@ -1,0 +1,4 @@
+key: mail_smtp_pass
+value: rivia111
+xtype: text-password
+area: mail

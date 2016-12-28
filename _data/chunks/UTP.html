@@ -1,0 +1,34 @@
+id: 31
+source: 1
+name: UTP
+description: ''
+category: template
+properties: 'a:0:{}'
+
+-----
+
+<section class="utp">
+    <div class="utp-image"></div>
+    <div class="background-gradient"></div>
+    <div class="container">
+        <div class="utp-heading">
+            <!-- <h1>
+                <span class="utp-first hidden">Не ищи оправданий - </span>
+                <span class="utp-second hidden">начни танцевать</span>
+            </h1> -->
+            <h1 class="hidden">[[*utp-header]]</h1>
+            <div class="center">
+                <a href="#" class="btn btn-didance want-dance hidden" data-toggle="modal" data-target="#WantDance">
+                    Хочу танцевать
+                </a>
+            </div>
+        </div>
+        <div class="events row">
+            [[pdoResources?
+                &parents=`135`
+                &depth=`0`
+                &tpl=`@INLINE  <h4><a href="{{+uri}}">{{+pagetitle}}</a></h4>`
+            ]]
+        </div>
+    </div>
+</section>

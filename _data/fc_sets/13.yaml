@@ -1,0 +1,7 @@
+id: 13
+profile: 2
+action: resource/create
+description: 'Набор правил для отдельной страницы с новостью'
+active: 1
+template: 10
+constraint_class: modResource

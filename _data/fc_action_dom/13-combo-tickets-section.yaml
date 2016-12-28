@@ -1,0 +1,11 @@
+id: 3693
+set: 13
+action: resource/create
+name: tickets-combo-section
+description: null
+container: modx-panel-resource
+rule: fieldVisible
+value: '0'
+constraint_class: modResource
+for_parent: 1
+rank: 5

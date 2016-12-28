@@ -1,0 +1,47 @@
+id: 4
+source: 1
+templatename: didanceTeacher
+description: ''
+properties: 'a:0:{}'
+static_file: assets/template/templates/didance.html
+
+-----
+
+<!DOCTYPE html>
+<html>
+<head>
+    [[$Head]]
+    <link rel="stylesheet" type="text/css" href="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.css">
+</head>
+<body>
+<header>
+[[$Header]]
+</header>
+<div class="block-separate"></div>
+<section class="content-wrapper">
+    <div class="container">
+        <div class="row">
+            <figure class="col-xs-4">
+                [[+ms2g.0]]
+            </figure>
+            <div class="content-block col-xs-8">
+                <h1>[[*pagetitle]]</h1>
+                <p>
+                   [[*content]]
+                </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+[[$Footer]]
+[[$Modals]]
+[[$Scripts]]
+<script src="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+</body>
+</html>

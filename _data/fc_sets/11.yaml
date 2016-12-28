@@ -1,0 +1,7 @@
+id: 11
+profile: 2
+action: resource/update
+description: 'Правила для шаблона страницы новостей'
+active: 1
+template: 3
+constraint_class: modResource

@@ -1,0 +1,12 @@
+id: 4804
+set: 38
+action: resource/create
+name: template
+description: null
+container: modx-panel-resource
+rule: fieldDefault
+value: '19'
+constraint: '*id'
+constraint_field: parent
+constraint_class: modResource
+for_parent: 1

@@ -1,0 +1,5 @@
+key: mspyacassa_payment_test_mode
+value: '1'
+xtype: combo-boolean
+namespace: mspyacassa
+area: mspyacassa_main

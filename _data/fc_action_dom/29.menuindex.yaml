@@ -1,0 +1,10 @@
+id: 3322
+set: 29
+action: resource/update
+name: menuindex
+description: null
+container: modx-panel-resource
+rule: fieldVisible
+value: '0'
+constraint_class: modResource
+rank: 5

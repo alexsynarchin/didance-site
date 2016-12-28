@@ -1,0 +1,5 @@
+key: mspyacassa_payment_check_hash
+value: '1'
+xtype: combo-boolean
+namespace: mspyacassa
+area: mspyacassa_main

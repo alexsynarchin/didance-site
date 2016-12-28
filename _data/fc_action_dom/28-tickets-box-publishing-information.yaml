@@ -1,0 +1,12 @@
+id: 4731
+set: 28
+action: resource/update
+name: tickets-box-publishing-information
+description: null
+container: modx-resource-tabs
+rule: tabVisible
+value: '0'
+constraint: '3'
+constraint_field: id
+constraint_class: modResource
+rank: 2

@@ -1,0 +1,12 @@
+id: 4686
+set: 28
+action: resource/update
+name: searchable
+description: null
+container: modx-panel-resource
+rule: fieldVisible
+value: '0'
+constraint: '3'
+constraint_field: id
+constraint_class: modResource
+rank: 5

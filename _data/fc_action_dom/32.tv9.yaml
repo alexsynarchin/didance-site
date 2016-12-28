@@ -1,0 +1,10 @@
+id: 5051
+set: 32
+action: resource/update
+name: tv9
+description: null
+container: modx-panel-resource
+rule: tvMove
+value: modx-resource-settings
+constraint_class: modResource
+rank: 30

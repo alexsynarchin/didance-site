@@ -1,0 +1,12 @@
+id: 4747
+set: 28
+action: resource/update
+name: tv14
+description: null
+container: modx-panel-resource
+rule: tvMove
+value: modx-resource-settings
+constraint: '3'
+constraint_field: id
+constraint_class: modResource
+rank: 70

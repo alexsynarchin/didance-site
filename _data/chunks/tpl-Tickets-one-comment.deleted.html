@@ -1,0 +1,16 @@
+id: 15
+source: 1
+name: tpl.Tickets.comment.one.deleted
+description: ''
+category: Tickets
+properties: null
+static_file: core/components/tickets/elements/chunks/chunk.comment_one_deleted.tpl
+
+-----
+
+<li class="ticket-comment" id="comment-[[+id]]">
+    <div class="ticket-comment-body alert alert-warning">
+        [[%ticket_comment_deleted_text]]
+    </div>
+    <ol class="comments-list">[[+children]]</ol>
+</li>

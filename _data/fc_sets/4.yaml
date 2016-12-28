@@ -1,0 +1,8 @@
+id: 4
+profile: 1
+action: resource/create
+description: 'Шаблон по умолчанию для страницы с услугой'
+active: 1
+constraint: '8'
+constraint_field: parent
+constraint_class: modResource

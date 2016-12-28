@@ -1,0 +1,10 @@
+id: 4148
+set: 17
+action: resource/update
+name: prices
+description: null
+container: modx-resource-tabs
+rule: tabNew
+value: Цены
+constraint_class: modResource
+rank: 1

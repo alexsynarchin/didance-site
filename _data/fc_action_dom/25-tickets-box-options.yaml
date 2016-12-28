@@ -1,0 +1,11 @@
+id: 2003
+set: 25
+action: resource/create
+name: tickets-box-options
+description: null
+container: modx-resource-tabs
+rule: tabVisible
+value: '0'
+constraint_class: modResource
+for_parent: 1
+rank: 2

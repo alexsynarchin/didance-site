@@ -1,0 +1,39 @@
+id: 9
+source: 1
+templatename: didanceSchedule
+description: ''
+properties: 'a:0:{}'
+static_file: assets/template/templates/didance.html
+
+-----
+
+<!DOCTYPE html>
+<html>
+<head>
+    [[$Head]]
+    <link rel="stylesheet" type="text/css" href="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.css">
+</head>
+<body>
+<header>
+[[$Header]]
+</header>
+<div class="block-separate"></div>
+<section class="content-wrapper">
+    <div class="container">
+            <h1 class="center">Расписание занятий</h1>
+        <div class="row">
+            [[*content]]
+        </div>
+    </div>
+</section>
+[[$Footer]]
+[[$Modals]]
+[[$Scripts]]
+<script src="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+</body>
+</html>

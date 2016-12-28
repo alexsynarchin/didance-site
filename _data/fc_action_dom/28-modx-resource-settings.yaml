@@ -1,0 +1,12 @@
+id: 4721
+set: 28
+action: resource/update
+name: modx-resource-settings
+description: null
+container: modx-resource-tabs
+rule: tabTitle
+value: Расписание
+constraint: '3'
+constraint_field: id
+constraint_class: modResource
+rank: 3

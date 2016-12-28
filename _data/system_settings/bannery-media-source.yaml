@@ -1,0 +1,4 @@
+key: bannery_media_source
+xtype: numberfield
+namespace: bannery
+area: bannery_main

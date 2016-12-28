@@ -1,0 +1,4 @@
+key: mspyacassa_payment_test_url
+value: 'https://demomoney.yandex.ru/eshop.xml'
+namespace: mspyacassa
+area: mspyacassa_main

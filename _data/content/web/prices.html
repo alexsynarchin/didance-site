@@ -1,0 +1,43 @@
+id: 6
+pagetitle: Цены
+alias: prices
+published: 1
+isfolder: 1
+introtext: ''
+richtext: 0
+template: 15
+menuindex: 3
+createdby: 1
+createdon: 1446735208
+publishedon: 1446735180
+publishedby: 1
+uri: prices/
+properties: '{"ms2gallery":{"media_source":"3"}}'
+tvs:
+    abonements: '[{"MIGX_id":"1","title":"\u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u044b\u0439","number":"8","duration":"1 \u043c\u0435\u0441\u044f\u0446","price":"1800","description":"\u0412\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u043f\u043e\u0441\u0435\u0449\u0435\u043d\u0438\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0434\u043d\u043e\u0433\u043e \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f"},{"MIGX_id":"2","title":"\u0413\u0438\u0431\u043a\u0438\u0439 - 8","number":"8","duration":"2 \u043c\u0435\u0441\u044f\u0446\u0430","price":"2000","description":"\u0412\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u043f\u043e\u0441\u0435\u0449\u0435\u043d\u0438\u0435 \u0432\u0441\u0435\u0445 \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0439"},{"MIGX_id":"3","title":"\u0413\u0438\u0431\u043a\u0438\u0439 - 16","number":"16","duration":"2 \u043c\u0435\u0441\u044f\u0446\u0430","price":"3200","description":"\u0412\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u043f\u043e\u0441\u0435\u0449\u0435\u043d\u0438\u0435 \u0432\u0441\u0435\u0445 \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0439"}]'
+    didance_cards: '[{"MIGX_id":"1","title":"1 \u043c\u0435\u0441\u044f\u0446","price":"3800"},{"MIGX_id":"2","title":"3 \u043c\u0435\u0441\u044f\u0446\u0430","price":"9500"},{"MIGX_id":"3","title":"6 \u043c\u0435\u0441\u044f\u0446\u0435\u0432","price":"15400"},{"MIGX_id":"4","title":"12 \u043c\u0435\u0441\u044f\u0446\u0435\u0432","price":"25000"}]'
+    keywords: ''
+    once_training: '[{"MIGX_id":"1","title":"\u041f\u0440\u043e\u0431\u043d\u043e\u0435 \u0437\u0430\u043d\u044f\u0442\u0438\u0435","price":"150","description":"\u0412\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u043f\u043e\u0441\u0435\u0449\u0435\u043d\u0438\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0434\u043d\u043e\u0433\u043e \u0437\u0430\u043d\u044f\u0442\u0438\u044f"},{"MIGX_id":"2","title":"\u0420\u0430\u0437\u043e\u0432\u043e\u0435 \u043f\u043e\u0441\u0435\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043d\u044f\u0442\u0438\u044f","price":"300","description":"\u0412\u043e\u0437\u043c\u043e\u0436\u043d\u043e \u043f\u043e\u0441\u0435\u0449\u0435\u043d\u0438\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u043e\u0434\u043d\u043e\u0433\u043e \u0437\u0430\u043d\u044f\u0442\u0438\u044f"}]'
+
+-----
+
+<div class="container">
+        <div class="price-block row">
+            <h3 class="center">Абонементы на групповые занятия</h3>
+            <div class="row center">
+               [[!msProducts?
+                     &parents=`143`
+                     &tpl =`abonements`
+                 ]]
+           </div>
+        </div>
+        <div class="price-block row">
+            <h3 class="center">Клубные карты с безлимитным посещением</h3>
+           <div class="row">
+               [[!msProducts?
+                     &parents=`144`
+                     &tpl =`abonements`
+                 ]]
+           </div>
+        </div>
+    </div>

@@ -1,0 +1,20 @@
+id: 23
+source: 1
+name: tpl.Tickets.comment.email.unpublished
+description: ''
+category: Tickets
+properties: null
+static_file: core/components/tickets/elements/chunks/chunk.comment_email_unpublished.tpl
+
+-----
+
+[[%ticket_comment_email_unpublished_intro?
+&name=`[[+name]]`
+&resource=`[[+resource]]`
+&pagetitle=`[[+pagetitle]]`
+]]
+
+<pre>[[+text]]</pre>
+<br/><br/>
+
+<a href="[[+manager_url]]">[[%ticket_email_all_comments]]</a>

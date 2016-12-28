@@ -1,0 +1,12 @@
+id: 13
+source: 1
+type: migx
+name: schedule_Bak
+caption: 'Didance - на Бакалинской'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: "a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:275:\"[\n{\"caption\":\"Didance - на Ростовской\",\"fields\": [\n{\"field\":\"title\",\n\"caption\":\"Занятие\"\n},\n{\n\"field\":\"trainer\",\n\"caption\":\"Преподаватель\"\n},\n{\n\"field\":\"start\",\n\"caption\":\"Начало\"\n},\n{\n\"field\":\"end\",\n\"caption\":\"Окончание\"\n}\n]\n}]\";s:7:\"columns\";s:371:\"[\n{\"header\": \"Занятие\", \"width\": \"300\", \"sortable\": \"false\", \"dataIndex\": \"title\"},\n{\"header\": \"Преподаватель\", \"width\": \"300\", \"sortable\": \"false\", \"dataIndex\": \"trainer\"},\n{\"header\": \"Начало\", \"width\": \"90\", \"sortable\": \"false\", \"dataIndex\": \"start\"},\n{\"header\": \"Окончание\", \"width\": \"90\", \"sortable\": \"false\", \"dataIndex\": \"end\"}\n\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}"
+output_properties: 'a:0:{}'
+content: ''

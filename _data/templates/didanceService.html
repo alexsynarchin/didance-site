@@ -1,0 +1,30 @@
+id: 13
+source: 1
+templatename: didanceService
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+<!DOCTYPE html>
+<html>
+<head>
+    [[$Head]]
+</head>
+<body>
+<header>
+[[$Header]]
+</header>
+<div class="block-separate"></div>
+<section class="content-wrapper">
+    <div class="container">
+            [[pdoResources?
+               &tpl=`ServiceItem`
+            ]]
+    </div>
+</section>
+[[$Footer]]
+[[$Modals]]
+[[$Scripts]]
+</body>
+</html>

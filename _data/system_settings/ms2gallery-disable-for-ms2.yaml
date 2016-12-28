@@ -1,0 +1,5 @@
+key: ms2gallery_disable_for_ms2
+value: '1'
+xtype: combo-boolean
+namespace: ms2gallery
+area: ms2gallery_resource

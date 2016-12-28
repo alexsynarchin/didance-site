@@ -1,0 +1,24 @@
+id: 51
+source: 1
+name: NewsItem
+description: ''
+category: template
+properties: 'a:0:{}'
+
+-----
+
+<a href="[[+uri]]" class="first news-item row">
+     <figure>
+       <img src="[[+280x240]]">
+   </figure>
+    <div class="news-item-text">
+        <h3>[[+pagetitle]]</h3>
+        <p>[[+introtext:ellipsis=`300`]]</p>
+        <!--<section href="" class="readmore">
+            <span class="text">
+                Подробнее
+            </span>
+            <div class="underline"></div>
+        </section>-->
+    </div>
+</a>

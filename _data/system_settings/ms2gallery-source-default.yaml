@@ -1,0 +1,5 @@
+key: ms2gallery_source_default
+value: '3'
+xtype: modx-combo-source
+namespace: ms2gallery
+area: ms2gallery_resource

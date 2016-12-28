@@ -1,0 +1,7 @@
+id: 29
+profile: 2
+action: resource/update
+description: 'Правила для дней недели в расписании'
+active: 1
+template: 9
+constraint_class: modResource

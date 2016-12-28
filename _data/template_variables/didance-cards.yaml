@@ -1,0 +1,12 @@
+id: 8
+source: 1
+type: migx
+name: didance_cards
+caption: 'Клубные карты с безлимитным посещением'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: "a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:174:\"[\n{\"caption\":\"Разовое посещение занятий\",\"fields\": [\n{\"field\":\"title\",\n\"caption\":\"Заголовок\"\n},\n{\n\"field\":\"price\",\n\"caption\":\"Цена\"\n}\n]\n}]\";s:7:\"columns\";s:176:\"[\n{\"header\": \"Заголовок\", \"width\": \"60\", \"sortable\": \"false\", \"dataIndex\": \"title\"},\n{\"header\": \"Цена\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"price\"}\n]\";s:7:\"btntext\";s:27:\"Добавить карту\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}"
+output_properties: 'a:0:{}'
+content: ''

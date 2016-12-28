@@ -1,0 +1,4 @@
+key: ms2gallery_disable_for_templates
+value: '12,3,5,15,2,9'
+namespace: ms2gallery
+area: ms2gallery_resource

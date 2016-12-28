@@ -1,0 +1,27 @@
+id: 32
+source: 1
+name: Special-main
+description: ''
+category: template
+properties: 'a:0:{}'
+
+-----
+
+<section class="special-main row">
+    <div class="special-main-card">
+        <div class="special-main-text">
+       [[*Special-main]]
+   </div>
+       [[!AjaxForm?
+        	&snippet=`FormIt`
+        	&form=`tpl.AjaxForm.special-main`
+        	&hooks=`email`
+        	&emailSubject=`Заявка блок с акцией -  главная страница`
+        	&emailTo=`gwynbleid11@yandex.ru, didance.ru@gmail.com`
+        	&emailTpl=`SentOrderTpl`
+        	&validate=`name:required,phone:required`
+        	&validationErrorMessage=`В форме содержатся ошибки!`
+        	&successMessage=`Благодарим за обращение, мы свяжемся с вами в близжайшее время.`
+        ]]
+    </div>
+</section>

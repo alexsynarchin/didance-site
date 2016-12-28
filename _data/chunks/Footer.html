@@ -1,0 +1,47 @@
+id: 33
+source: 1
+name: Footer
+description: ''
+category: template
+properties: 'a:0:{}'
+
+-----
+
+<div class="page-buffer"></div>
+<footer>
+<div class="block-separate"></div>
+<div class="container">
+    <div class="row">
+        <div class="footer-logo col-md-3 col-xs-3">
+            <img src="[[++assets_url]]/template/images/logo.png">
+        </div>
+        <div class="footer-contact col-md-3 col-xs-3">
+            <div class="address">
+                <i class="el el-map-marker"></i> г. Уфа, ул. Ростовская 18/Е<br>
+            </div>
+            <div class="phone">
+                <i class="el el-phone"></i> 8-962-520-15-15
+            </div>
+        </div>
+        <div class="footer-dance-styles col-md-6 col-xs-6">
+            <span class="heading">Направления:</span>
+            [[pdoMenu?
+                &parents=`2`
+                &level=`1`
+            ]]
+        </div>
+    </div>
+    <div class="footer-separator"></div>
+    <div class="footer-social">
+        <ul>
+            <ul>
+                <li><a href="https://vk.com/didance_studio" class="social-icons social-vk"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCpvY6ydGBnAa9LM5xaLS-7w" class="social-icons social-youtube"></a></li>
+                <li><a href="https://www.instagram.com/di_dance/" class="social-icons social-instagram"></a></li>
+            </ul>
+        </ul><br>
+        Подпишитесь на новости и обновления в социальных сетях
+    </div>
+</div>
+</footer>
+[[$Metrika]]

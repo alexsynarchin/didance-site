@@ -1,0 +1,7 @@
+id: 16
+profile: 2
+action: resource/create
+description: 'Правила для страницы с танцевальным направлением'
+active: 1
+template: 6
+constraint_class: modResource

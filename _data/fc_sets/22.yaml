@@ -1,0 +1,7 @@
+id: 22
+profile: 2
+action: resource/update
+description: 'Набор правил для страницы с услугой'
+active: 1
+template: 11
+constraint_class: modResource

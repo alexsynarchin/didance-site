@@ -1,0 +1,32 @@
+id: 72
+source: 1
+name: lpItemBlock
+description: ''
+category: template
+properties: 'a:0:{}'
+
+-----
+
+<div class="content-wrapper-text row">
+    [[+tv.showHeader:is=`1`:then=`<h3>[[+pagetitle]]</h3>`]]
+    [[+content]]
+[[!ms2Gallery?
+ &resource=`[[+id]]`
+ &tplOuter=`@INLINE <div class="service-item-block-gallery">[[+rows]]</div>`
+ &tplRow=`@INLINE <a href="[[+url]]" rel="fancybox" class="fancybox" ><img src="[[+420x300]]" alt="[[+alt]]" title="[[+name]]" ></a>`
+ &tplEmpty=`@INLINE `
+&limit=`3`
+]]
+<ul class="service-item-ListBlock">
+[[!getImageList?
+  &tvname=`list-items`
+  &tpl=`list-items`
+  &docid=`[[+id]]`
+]]
+</ul>
+[[!getImageList?
+              &tvname=`frame`
+              &tpl=`lp_frame`
+              &docid=`[[+id]]`
+            ]]
+</div>

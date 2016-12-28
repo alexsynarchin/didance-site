@@ -1,0 +1,4 @@
+key: mspyacassa_hold_mws_private_key
+value: '{core_path}components/mspyacassa/elements/mws/private.key'
+namespace: mspyacassa
+area: mspyacassa_hold

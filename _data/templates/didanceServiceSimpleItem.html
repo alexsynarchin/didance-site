@@ -1,0 +1,57 @@
+id: 16
+source: 1
+templatename: didanceServiceSimpleItem
+description: ''
+properties: 'a:0:{}'
+static_file: assets/template/templates/didance.html
+
+-----
+
+<!DOCTYPE html>
+<html>
+<head>
+    [[$Head]]
+     <link rel="stylesheet" type="text/css" href="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.css">
+</head>
+<body>
+<header>
+[[$Header]]
+</header>
+<div class="block-separate"></div>
+<section class="content-wrapper">
+    <div class="container">
+        <div class="content-wrapper-text row">
+            <h1 class="center">[[*pagetitle]]</h1>
+            [[*content]]
+              <ul class="service-item-ListBlock">
+                [[getImageList?
+                  &tvname=`list-items`
+                  &tpl=`list-items`
+                ]]
+            </ul>
+        </div>
+       [[!ms2Gallery?
+ 
+ &tplOuter=`@INLINE <div class="service-item-block-gallery">[[+rows]]</div>`
+ &tplRow=`@INLINE <a href="[[+url]]" rel="fancybox" class="fancybox" ><img src="[[+420x300]]" alt="[[+alt]]" title="[[+name]]" ></a>`
+ &tplEmpty=`@INLINE `
+&limit=`3`
+]]
+        <div class="service-item-block-order center">
+     <a href=""  data-toggle="modal" data-target="#service-item-block-order" class=" btn btn-didance">
+                        [[*orderButton]]
+                    </a>
+</div>
+    </div>
+</section>
+[[$Footer]]
+[[$Modals]]
+[[$Scripts]]
+<script src="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+</body>
+</html>

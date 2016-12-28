@@ -1,0 +1,5 @@
+key: ms2gallery_exact_sorting
+value: '1'
+xtype: combo-boolean
+namespace: ms2gallery
+area: ms2gallery_resource

@@ -1,0 +1,10 @@
+id: 1925
+set: 6
+action: resource/create
+name: template
+description: null
+container: modx-panel-resource
+rule: fieldDefault
+value: '1'
+constraint_class: modResource
+for_parent: 1

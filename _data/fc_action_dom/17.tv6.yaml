@@ -1,0 +1,10 @@
+id: 4150
+set: 17
+action: resource/update
+name: tv6
+description: null
+container: modx-panel-resource
+rule: tvMove
+value: prices
+constraint_class: modResource
+rank: 50

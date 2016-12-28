@@ -1,0 +1,12 @@
+id: 15
+source: 1
+type: migx
+name: frame
+caption: 'Код виджета'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: "a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:191:\"[\n{\"caption\":\"Список\",\"fields\": [\n{\"field\":\"title\",\n\"caption\":\"Заголовок\"\n},\n{\"field\":\"src_link\",\n\"caption\":\"Ссылка\"\n},\n{\"field\":\"height\",\n\"caption\":\"Высота\"\n}\n]\n}]\";s:7:\"columns\";s:272:\"[\n{\"header\": \"Заголовок\", \"width\": \"300\", \"sortable\": \"false\", \"dataIndex\": \"title\"},\n{\"header\": \"Ссылка\", \"width\": \"250\", \"sortable\": \"false\", \"dataIndex\": \"src_link\"},\n{\"header\": \"Высота\", \"width\": \"80\", \"sortable\": \"false\", \"dataIndex\": \"height\"}\n]\";s:7:\"btntext\";s:0:\"\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}"
+output_properties: 'a:0:{}'
+content: ''

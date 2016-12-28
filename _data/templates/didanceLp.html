@@ -1,0 +1,82 @@
+id: 17
+source: 1
+templatename: didanceLp
+description: ''
+properties: 'a:0:{}'
+
+-----
+
+<!DOCTYPE html>
+<html>
+<head>
+    [[$Head]]
+     <link rel="stylesheet" type="text/css" href="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.css">
+</head>
+<body>
+<header>
+[[$Header]]
+</header>
+<div class="block-separate"></div>
+<section class="content-wrapper">
+    <div class="container">
+        <div class="content-wrapper-text row">
+            <h1 class="center">[[*pagetitle]]</h1>
+            [[*content]]
+            [[ms2Gallery?
+                 &resource=`[[*id]]`
+                 &tplOuter=`@INLINE <div class="service-item-block-gallery">[[+rows]]</div>`
+                 &tplRow=`@INLINE <a href="[[+url]]" rel="fancybox" class="fancybox" ><img src="[[+420x300]]" alt="[[+alt]]" title="[[+name]]" ></a>`
+                 &tplEmpty=`@INLINE `
+                &limit=`3`
+            ]]
+            [[*first-textBlock]]
+            <ul class="column-list-items">
+                [[!getImageList?
+                    &tvname=`list-items`
+                    &tpl=`list-items`
+                ]]
+            </ul>
+            [[*second-textBlock]]
+            [[!getImageList?
+              &tvname=`frame`
+              &tpl=`lp_frame`
+            ]]
+        </div>
+        [[!pdoResources?
+            &parents=`[[*id]]`
+            &showUnpublished=`1`
+            &tpl=`lpItemBlock`
+            &includeTVs=`list-items,showHeader,frame`
+            &processTVs=`1`
+            &includeContent=`1`
+            &sortdir=`ASC`
+            &sortby=`menuindex`
+        ]]
+    </div>
+</section>
+[[$Footer]]
+[[$Modals]]
+<!---lp with frame modal--->
+<div class="modal-vcenter modal fade" id="didance-lp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="center modal-title" id="myModalLabel">[[*order]]</h3>
+            </div>
+            <div class="modal-body">
+               <iframe class="tallanto-form"  style="width: 100%; height: 100%; border: 0;" frameborder="0"  src="[[*frame]]" width="100%" height="100%">Записаться на занятие</iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!---End of lp with frame moda--->
+[[$Scripts]]
+<script src="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+</body>
+</html>

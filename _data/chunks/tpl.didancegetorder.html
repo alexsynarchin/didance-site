@@ -1,0 +1,41 @@
+id: 94
+source: 1
+name: tpl.didanceGetOrder
+description: ''
+category: e-commerce
+properties: 'a:0:{}'
+
+-----
+
+<div id="msCart">
+    <div class="row">
+          <div class="table-responsive col-xs-8">
+        <table class="table ">
+            <tr class="header">
+                <th class="title col-md-4">{'ms2_cart_title' | lexicon}</th>
+                <th class="count col-md-2">{'ms2_cart_count' | lexicon}</th>
+                <th class="price col-md-1">{'ms2_cart_cost' | lexicon}</th>
+            </tr>
+            {foreach $products as $product}
+                <tr>
+                    <td class="title">
+                        {$product.name}
+                    </td>
+                    <td class="count">{$product.count} {'ms2_frontend_count_unit' | lexicon}</td>
+                    <td class="price">{$product.price} {'ms2_frontend_currency' | lexicon}</td>
+                </tr>
+            {/foreach}
+            <tr class="footer">
+                <th class="total">Итого:</th>
+                <th class="total_count">
+                    <span class="ms2_total_count">{$total.cart_count}</span> {'ms2_frontend_count_unit' | lexicon}
+                </th>
+                <th class="total_cost">
+                    <span class="ms2_total_cost">{$total.cart_cost}</span> {'ms2_frontend_currency' | lexicon}
+                </th>
+            </tr>
+        </table>
+    </div>
+    </div>
+  <a href="/prices">Вернуться на страницу с ценами</a>
+</div>

@@ -1,0 +1,84 @@
+id: 93
+source: 1
+name: tpl.didanceOrder
+description: ''
+category: e-commerce
+properties: 'a:0:{}'
+
+-----
+
+<form class="form-horizontal ms2_form" id="msOrder" method="post" style="margin-top:0">
+    
+    <div class="row">
+        <div class="col-md-6">
+            <h4>{'ms2_frontend_credentials' | lexicon}:</h4>
+            {foreach ['email','receiver','phone'] as $field}
+                <div class="form-group input-parent">
+                    <label class="col-md-4 control-label" for="{$field}">
+                        <span class="required-star">*</span> {('ms2_frontend_' ~ $field) | lexicon}
+                    </label>
+                    <div class="col-sm-6">
+                        <input type="text" id="{$field}" placeholder="{('ms2_frontend_' ~ $field) | lexicon}"
+                               name="{$field}" value="{$form[$field]}"
+                               class="form-control{($field in list $errors) ? ' error' : ''}">
+                    </div>
+                </div>
+            {/foreach}
+
+            <div class="form-group input-parent">
+                <label class="col-md-4 control-label" for="comment">
+                    <span class="required-star">*</span> {'ms2_frontend_comment' | lexicon}</label>
+                <div class="col-sm-6">
+                    <textarea name="comment" id="comment" placeholder="{'ms2_frontend_comment' | lexicon}"
+                              class="form-control{('comment' in list $errors) ? ' error' : ''}">{$form.comment}</textarea>
+                </div>
+            </div>
+        </div>
+         <div class="col-xs-6">
+             <h4>{'ms2_frontend_payments' | lexicon}:</h4>
+            <div class="form-group">
+                <label class="col-md-4 control-label"><span class="required-star">*</span>
+                    {'ms2_frontend_payment_select' | lexicon}</label>
+                <div class="col-sm-6">
+                    <select class="form-control">
+                         {foreach $payments as $payment}
+                             <option value="{$payment.id}" id="payment_{$payment.id}" $payment.id == $order.payment ? 'selected' : ''}>{$payment.name}</option>
+                         {/foreach}
+                    </select>
+                  
+                </div>
+            </div>
+            <div style="display:none">
+                {var $i = 0}
+                    {foreach $deliveries as $idx => $delivery}
+                        {var $checked = !$order.delivery && $i == 0 || $delivery.id == $order.delivery}
+                        {var $i += 1}
+                        <div class="checkbox">
+                            <label class="delivery input-parent">
+                                <input type="radio" name="delivery" value="{$delivery.id}" id="delivery_{$delivery.id}"
+                                       data-payments="{$delivery.payments | json_encode}"
+                                        {$checked ? 'checked' : ''}>
+                                {if $delivery.logo?}
+                                    <img src="{$delivery.logo}" alt="{$delivery.name}" title="{$delivery.name}"/>
+                                {else}
+                                    {$delivery.name}
+                                {/if}
+                                {if $delivery.description?}
+                                    <p class="small">
+                                        {$delivery.description}
+                                    </p>
+                                {/if}
+                            </label>
+                        </div>
+                    {/foreach}
+            </div>
+            <h3>Итого:
+                <span id="ms2_order_cost">{$order.cost ?: 0}</span>
+                {'ms2_frontend_currency' | lexicon}
+            </h3>
+            <button type="submit" name="ms2_action" value="order/submit" class="btn btn-didance ms2_link">
+                {'ms2_frontend_order_submit' | lexicon}
+            </button>
+    </div>
+    </div>
+</form>

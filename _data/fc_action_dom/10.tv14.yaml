@@ -1,0 +1,11 @@
+id: 2434
+set: 10
+action: resource/create
+name: tv14
+description: null
+container: modx-panel-resource
+rule: tvMove
+value: modx-resource-settings
+constraint_class: modResource
+for_parent: 1
+rank: 30

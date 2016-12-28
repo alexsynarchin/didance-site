@@ -1,0 +1,41 @@
+id: 7
+source: 1
+templatename: didanceMainVideo
+description: ''
+properties: 'a:0:{}'
+static_file: assets/template/templates/didance.html
+
+-----
+
+<!DOCTYPE html>
+<html>
+<head>
+    [[$Head]]
+</head>
+<body>
+<header>
+[[$Header]]
+</header>
+<section class="utp utp-video ">
+    <video autoplay loop poster="[[++assets_url]]template/images/utp-bg.jpg">
+        <source src="[[++assets_url]]template/video/di.mp4">
+    </video>
+    <div class="background-gradient"></div>
+    <div class="container">
+        <div class="utp-heading">
+            <h1><span class="utp-first">Не ищи оправданий - </span>
+                <span class="utp-second">Начни танцевать</span>
+            </h1>
+            <div class="center">
+                <a href="#" class="btn btn-didance want-dance hidden">
+                    Хочу танцевать
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+[[$Special-main]]
+[[$Modals]]
+[[$Scripts]]
+</body>
+</html>

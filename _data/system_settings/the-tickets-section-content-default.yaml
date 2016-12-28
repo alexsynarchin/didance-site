@@ -1,0 +1,5 @@
+key: tickets.section_content_default
+value: "[[!pdoPage?\n\t&element=`getTickets`\n]]\n\n[[!+page.nav]]"
+xtype: textarea
+namespace: tickets
+area: tickets.section

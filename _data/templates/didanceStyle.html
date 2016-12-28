@@ -1,0 +1,79 @@
+id: 6
+source: 1
+templatename: didanceStyle
+description: ''
+properties: 'a:0:{}'
+static_file: assets/template/templates/didance.html
+
+-----
+
+<!DOCTYPE html>
+<html>
+<head>
+    [[$Head]]
+    <link rel="stylesheet" type="text/css" href="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.css">
+</head>
+<body>
+<header>
+[[$Header]]
+</header>
+<div class="block-separate"></div>
+<section class="content-wrapper">
+    <div class="container">
+         [[pdoCrumbs]]
+        <div class="content-wrapper-text row">
+                <h1 class="center">[[*pagetitle]]</h1>
+                <div class="page-right-block">
+                    [[ms2Gallery?
+                    &tplOuter=`tpl.PageGalleryStyle.outer`
+                    &tplRow=`tpl.PageGalleryStyle.row`
+                    &tplSingle=`tpl.PageGalleryStyle.single`
+                    &tplEmpty=`@INLINE `
+                    ]]
+                    <div class="order-block center row">
+                        <a href=""  data-toggle="modal" data-target="#danceStyle-item-order" class=" btn btn-didance">
+                            Записаться на занятия
+                        </a>
+                    </div>
+                </div>
+                   [[*content]]
+        </div>
+    </div>
+
+</section>
+[[$Footer]]
+[[$Modals]]
+<!--Dance Style modal-->
+<div class="modal-vcenter modal fade" id="danceStyle-item-order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="center modal-title" id="myModalLabel">Записаться на занятия</h3>
+            </div>
+            <div class="modal-body">
+                [[!AjaxForm?
+                	&snippet=`FormIt`
+                	&form=`tpl.AjaxForm.Order`
+                	&hooks=`email`
+                	&emailSubject=`Заявка с сайта didance.ru со страницы танцевального стиля - [[*pagetitle]]`
+                	&emailTo=`didance.ru@gmail.com,gwynbleid11@yandex.ru`
+                	&emailTpl=`SentOrderTpl`
+                	&validate=`name:required,phone:required`
+                	&validationErrorMessage=`В форме содержатся ошибки!`
+                	&successMessage=`Благодарим за обращение, мы свяжемся с вами в близжайшее время.`
+                ]]
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of Dance Style modal-->
+[[$Scripts]]
+<script src="[[++assets_url]]template/bower_components/fancybox/source/jquery.fancybox.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+</body>
+</html>

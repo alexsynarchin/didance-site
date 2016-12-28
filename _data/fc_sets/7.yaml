@@ -1,0 +1,7 @@
+id: 7
+profile: 2
+action: resource/update
+description: 'Правила для страницы со всеми Акциями'
+active: 1
+template: 12
+constraint_class: modResource

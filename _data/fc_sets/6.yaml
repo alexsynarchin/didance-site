@@ -1,0 +1,7 @@
+id: 6
+profile: 1
+action: resource/create
+description: 'Шаблон по умолчанию для блоков страницы  с услугой (пустой)'
+active: 1
+template: 11
+constraint_class: modResource

@@ -1,0 +1,12 @@
+id: 7
+source: 1
+type: migx
+name: abonements
+caption: 'Абонементы на групповые занятия'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: "a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:362:\"[\n{\"caption\":\"Разовое посещение занятий\",\"fields\": [\n{\"field\":\"title\",\n\"caption\":\"Заголовок\"\n},\n{\"field\":\"number\",\n\"caption\":\"Количество занятий\"\n},\n{\"field\":\"duration\",\n\"caption\":\"Срок действия\"\n},\n{\n\"field\":\"price\",\n\"caption\":\"Цена\"\n},{\n\"field\":\"description\",\n\"caption\":\"Описание\"\n}\n]\n}]\";s:7:\"columns\";s:488:\"[\n{\"header\": \"Заголовок\", \"width\": \"160\", \"sortable\": \"false\", \"dataIndex\": \"title\"},\n{\"header\": \"Количество занятий\", \"width\": \"180\", \"sortable\": \"false\", \"dataIndex\": \"number\"},\n{\"header\": \"Срок действия\", \"width\": \"180\", \"sortable\": \"false\", \"dataIndex\": \"duration\"},\n{\"header\": \"Цена\", \"width\": \"80\", \"sortable\": \"false\", \"dataIndex\": \"price\"},\n{\"header\": \"Описание\", \"width\": \"320\", \"sortable\": \"false\", \"dataIndex\": \"description\"}\n]\";s:7:\"btntext\";s:35:\"Добавить абонемент\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}"
+output_properties: 'a:0:{}'
+content: ''

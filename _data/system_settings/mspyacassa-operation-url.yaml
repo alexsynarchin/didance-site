@@ -1,0 +1,4 @@
+key: mspyacassa_operation_url
+value: 'https://penelope.yamoney.ru:443/webservice/mws/api/'
+namespace: mspyacassa
+area: mspyacassa_main

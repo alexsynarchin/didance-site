@@ -1,0 +1,8 @@
+id: 5
+profile: 1
+action: resource/create
+description: 'Шаблон по умолчанию для страниц акций'
+active: 1
+constraint: '9'
+constraint_field: parent
+constraint_class: modResource

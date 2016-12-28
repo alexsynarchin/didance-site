@@ -1,0 +1,12 @@
+id: 4734
+set: 28
+action: resource/update
+name: tv7
+description: null
+container: modx-panel-resource
+rule: tvVisible
+value: '0'
+constraint: '3'
+constraint_field: id
+constraint_class: modResource
+rank: 12

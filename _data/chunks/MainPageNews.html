@@ -1,0 +1,45 @@
+id: 52
+source: 1
+name: MainPageNews
+description: ''
+category: template
+properties: 'a:0:{}'
+
+-----
+
+<section class="main-page-items-block">
+    <div class="container">
+        [[$Special-main]]
+        <div class="row">
+            <section class="main-page-specials col-xs-6">
+        [[ms2GalleryResources?
+            &parents=`9`
+            &typeOfJoin=`inner`
+            &includeThumbs=`600x600`
+            &limit=`1`
+            &sortdir=`DESC`
+            &sortby=`menuindex`
+            &tpl=`@INLINE<a href="[[+uri]]" class="row"> <div class="main-page-specials-gradient"><h3 class="center">[[+pagetitle]]</h3>  <p>[[+introtext:ellipsis=`300`]]</p></div> <img src="[[+600x600]]"></a>
+            `
+        ]]
+    </section>
+    <section class="main-page-news col-xs-6">
+        <ul class="row">
+            [[ms2GalleryResources?
+            &parents=`5`
+            &typeOfJoin=`inner`
+            &includeThumbs=`300x300`
+            &limit=`4`
+            &sortdir=`DESC`
+            &sortby=`id`
+            &tpl=`@INLINE <li class="col-xs-6"><a href="[[+uri]]" class="row"><figure><div class="main-news-gradient first"><h3 class="center">[[+pagetitle]]</h3></div><img src="[[+300x300]]"></figure></a></li>`
+            &tpl_n2=`@INLINE <li class="col-xs-6"><a href="[[+uri]]" class="row"><figure><div class="main-news-gradient second"><h3 class="center">[[+pagetitle]]</h3></div><img src="[[+300x300]]"></figure></a></li>`
+            &tpl_n3=`@INLINE <li class="col-xs-6"><a href="[[+uri]]" class="row"><figure><div class="main-news-gradient three"><h3 class="center">[[+pagetitle]]</h3></div><img src="[[+300x300]]"></figure></a></li>`
+            &tpl_n4=`@INLINE <li class="col-xs-6"><a href="[[+uri]]" class="row"><figure><div class="main-news-gradient four"><h3 class="center">[[+pagetitle]]</h3></div><img src="[[+300x300]]"></figure></a></li>`
+        ]]
+        </ul>
+    </section>
+        </div>
+    </div>
+    
+</section>

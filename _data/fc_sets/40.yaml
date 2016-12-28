@@ -1,0 +1,6 @@
+id: 40
+profile: 2
+action: resource/update
+active: 1
+template: 19
+constraint_class: modResource

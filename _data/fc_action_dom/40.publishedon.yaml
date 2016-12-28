@@ -1,0 +1,10 @@
+id: 4938
+set: 40
+action: resource/update
+name: publishedon
+description: null
+container: modx-panel-resource
+rule: fieldVisible
+value: '0'
+constraint_class: modResource
+rank: 5

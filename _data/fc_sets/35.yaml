@@ -1,0 +1,7 @@
+id: 35
+profile: 2
+action: resource/update
+description: 'Правила для страницы о студии'
+active: 1
+template: 8
+constraint_class: modResource

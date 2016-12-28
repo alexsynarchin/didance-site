@@ -1,0 +1,21 @@
+id: 70
+source: 1
+name: main-schedule
+description: ''
+category: template
+properties: 'a:0:{}'
+
+-----
+
+        <h3>Сегодня в DiDance:</h3>
+           <div class="col-lg-4 col-md-5 col-xs-5">
+               <h4><i class="el el-map-marker"></i> На Ростовской:</h4>
+                <ul class="today-classes-list">
+                   [[!getImageList?
+                    &tvname=`schedule_Rost`
+                    &tpl=`main-schedule-list`
+                    &docid=`[[+id]]`
+                    ]]
+               </ul>
+           </div>
+      

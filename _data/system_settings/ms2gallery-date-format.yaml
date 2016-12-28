@@ -1,0 +1,4 @@
+key: ms2gallery_date_format
+value: '%d.%m.%y %H:%M'
+namespace: ms2gallery
+area: ms2gallery_resource

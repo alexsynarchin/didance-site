@@ -1,0 +1,7 @@
+id: 18
+profile: 2
+action: resource/update
+description: 'Набор правил для страницы преподавателя'
+active: 1
+template: 4
+constraint_class: modResource

@@ -1,0 +1,27 @@
+id: 53
+source: 1
+name: serviceItemBlock
+description: ''
+category: template
+properties: 'a:0:{}'
+
+-----
+
+<div class="content-wrapper-text row">
+    <h3>[[+pagetitle]]</h1>
+    <p>[[+content]]</p> 
+[[!ms2Gallery?
+ &resource=`[[+id]]`
+ &tplOuter=`@INLINE <div class="service-item-block-gallery">[[+rows]]</div>`
+ &tplRow=`@INLINE <a href="[[+url]]" rel="fancybox" class="fancybox" ><img src="[[+420x300]]" alt="[[+alt]]" title="[[+name]]" ></a>`
+ &tplEmpty=`@INLINE `
+&limit=`3`
+]]
+<ul class="service-item-ListBlock">
+[[getImageList?
+  &tvname=`list-items`
+  &tpl=`list-items`
+  &docid=`[[+id]]`
+]]
+</ul>
+</div>

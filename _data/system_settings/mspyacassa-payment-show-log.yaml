@@ -1,0 +1,4 @@
+key: mspyacassa_payment_show_log
+xtype: combo-boolean
+namespace: mspyacassa
+area: mspyacassa_main

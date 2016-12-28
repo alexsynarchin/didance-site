@@ -1,0 +1,11 @@
+id: 3694
+set: 13
+action: resource/create
+name: modx-resource-settings
+description: null
+container: modx-resource-tabs
+rule: tabTitle
+value: 'Основная информация'
+constraint_class: modResource
+for_parent: 1
+rank: 3

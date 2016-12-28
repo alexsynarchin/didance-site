@@ -1,0 +1,7 @@
+id: 14
+profile: 2
+action: resource/update
+description: 'Правила для шаблона DidanceItems'
+active: 1
+template: 5
+constraint_class: modResource

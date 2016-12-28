@@ -1,0 +1,13 @@
+id: 22
+source: 1
+type: migx
+name: Utp-slider
+caption: Слайдер
+description: 'Разрешение фотографий 1920 на 650 пикселей'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: "a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:97:\"[{\"caption\":\"Image\", \"fields\": [\n    {\"field\":\"image\",\"caption\":\"Image\",\"inputTV\":\"Image\"}\n  ]\n}]\";s:7:\"columns\";s:99:\"[{\n  \"header\": \"Image\", \"sortable\": \"false\", \"dataIndex\": \"image\",\"renderer\": \"this.renderImage\"\n}]\";s:7:\"btntext\";s:39:\"Добавить изображение\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}"
+output_properties: 'a:0:{}'
+content: ''

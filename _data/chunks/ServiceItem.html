@@ -1,0 +1,33 @@
+id: 54
+source: 1
+name: ServiceItem
+description: ''
+category: template
+properties: 'a:0:{}'
+
+-----
+
+<a href="[[+uri]]" class="service-item row">
+    <div class="service-item-text col-xs-7 ">
+        
+        <h3>[[+pagetitle]]</h3>
+            
+        <p>[[+introtext:ellipsis=`300`]]</p>
+            <section class="readmore">
+                <span class="text">
+                Подробнее
+            </span>
+            <div class="underline"></div>
+            </section>
+    </div>
+    <div class="service-item-thumbs col-xs-5">
+         [[!ms2Gallery?
+         &resource=`[[+id]]`
+         &tplOuter=`@INLINE <div class="row">[[+rows]]</div>`
+         &tplRow=`@INLINE <figure><img src="[[+420x300]]" alt="[[+alt]]" title="[[+name]]" ></figure>`
+         &tplEmpty=`@INLINE `
+        &limit=`2`
+        ]]
+    </div>
+       
+</a>

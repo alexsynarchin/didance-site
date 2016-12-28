@@ -1,0 +1,12 @@
+id: 6
+source: 1
+type: migx
+name: once_training
+caption: 'Разовое посещение занятий'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: "a:7:{s:7:\"configs\";s:0:\"\";s:8:\"formtabs\";s:229:\"[\n{\"caption\":\"Разовое посещение занятий\",\"fields\": [\n{\"field\":\"title\",\n\"caption\":\"Заголовок\"\n},{\n\"field\":\"price\",\n\"caption\":\"Цена\"\n},{\n\"field\":\"description\",\n\"caption\":\"Описание\"\n}\n]\n}]\";s:7:\"columns\";s:272:\"[\n{\"header\": \"Заголовок\", \"width\": \"60\", \"sortable\": \"false\", \"dataIndex\": \"title\"},\n{\"header\": \"Цена\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"price\"},\n{\"header\": \"Описание\", \"width\": \"50\", \"sortable\": \"false\", \"dataIndex\": \"description\"}\n]\";s:7:\"btntext\";s:67:\"Добавить вариант разового посещения\";s:10:\"previewurl\";s:0:\"\";s:10:\"jsonvarkey\";s:0:\"\";s:19:\"autoResourceFolders\";s:5:\"false\";}"
+output_properties: 'a:0:{}'
+content: ''

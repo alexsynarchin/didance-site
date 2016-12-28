@@ -1,0 +1,5 @@
+key: ms2gallery_new_tab_mode
+value: '0'
+xtype: combo-boolean
+namespace: ms2gallery
+area: ms2gallery_resource

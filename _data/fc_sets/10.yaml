@@ -1,0 +1,7 @@
+id: 10
+profile: 2
+action: resource/create
+description: 'Правила для  страницы отдельной акции'
+active: 1
+template: 14
+constraint_class: modResource

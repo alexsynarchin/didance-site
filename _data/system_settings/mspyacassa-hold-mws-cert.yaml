@@ -1,0 +1,4 @@
+key: mspyacassa_hold_mws_cert
+value: '{core_path}components/mspyacassa/elements/mws/shop.cer'
+namespace: mspyacassa
+area: mspyacassa_hold

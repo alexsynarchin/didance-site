@@ -1,0 +1,27 @@
+id: 59
+name: abonements
+description: ''
+category: e-commerce
+properties: 'a:0:{}'
+
+-----
+
+<div class="abonement">
+    <form class="abonement__form ms2_form" method="post">
+        <h4 class="abonement__header">[[+pagetitle]]</h4>
+        <div class="abonement__middle">
+            {if $description}<span class="abonement__descr">{$description} - </span>{/if}<span class="abonement__price">[[+price]] Р</span>
+        </div>
+        {if $introtext}
+        <div class="abonement__intro">{$introtext}</div>
+        {/if}
+        <input type="hidden" name="id" value="[[+id]]">
+            <input type="hidden" name="count" value="1">
+            <input type="hidden" name="options" value="[]">
+        <button class="btn btn-didance " type="submit" name="ms2_action" value="cart/add" onclick="miniShop2.Callbacks.Cart.add.response.success = function(response) {
+	document.location.href='/payment/';};">Купить</button>
+</form>
+</div>
+
+
+

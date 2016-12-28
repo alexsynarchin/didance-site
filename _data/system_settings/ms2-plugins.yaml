@@ -1,0 +1,5 @@
+key: ms2_plugins
+value: '[]'
+xtype: textarea
+namespace: minishop2
+area: ms2_main

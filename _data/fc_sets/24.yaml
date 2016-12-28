@@ -1,0 +1,7 @@
+id: 24
+profile: 2
+action: resource/update
+description: 'Страница блока'
+active: 1
+template: 1
+constraint_class: modResource

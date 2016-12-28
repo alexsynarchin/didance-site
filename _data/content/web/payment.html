@@ -1,0 +1,32 @@
+id: 146
+pagetitle: Оплата
+alias: payment
+published: 1
+isfolder: 1
+introtext: ''
+richtext: 0
+template: 20
+menuindex: 15
+createdby: 1
+createdon: 1480049985
+publishedon: 1480054800
+publishedby: 1
+hidemenu: 1
+uri: payment/
+properties: '{"ms2gallery":{"media_source":"3"}}'
+tvs:
+    keywords: ''
+
+-----
+
+[[!msCart?
+    &tpl=`tpl.didanceCart`
+]] <!-- Просмотр и изменение корзины, скрывается после создания заказа -->
+
+[[!msOrder?
+    &tpl=`tpl.didanceOrder`
+]] <!-- Форма оформления заказа, скрывается после его создания -->
+
+[[!msGetOrder?
+    &tpl=`tpl.didanceGetOrder`
+]] 

@@ -1,0 +1,45 @@
+id: 1
+source: 1
+name: Header
+description: ''
+category: template
+properties: 'a:0:{}'
+static_file: assets/template/chunks/Header.html
+
+-----
+
+<div class="container">
+        <div class="row">
+            <a href="#" class="logo col-md-3 col-xs-3">
+                <img src="[[++assets_url]]/template/images/logo.png">
+            </a>
+              <div class="header-contact col-md-9 col-xs-9 row">
+                  <div class="header-social col-md-2 col-xs-2 ">
+                    <ul class="row">
+                        <li><a href="https://vk.com/didance_studio" class="social-icons social-vk"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCpvY6ydGBnAa9LM5xaLS-7w" class="social-icons social-youtube"></a></li>
+                        <li><a href="https://www.instagram.com/di_dance/" class="social-icons social-instagram"></a></li>
+                    </ul>
+                </div>
+                <section class="address col-md-4 col-xs-4" style="font-size:0.9em;">
+                    <i class="el el-map-marker"></i> г. Уфа, ул. Ростовская, 18/Е<br>
+                </section>
+                <section class="phone col-md-3 col-xs-3">
+                    <i class="el el-phone"></i> 8-962-520-15-15
+                </section>
+                <div class="callback col-md-3 col-xs-3">
+                    <a href="" data-toggle="modal" data-target="#CallBackModal" class="btn btn-didance">
+                        Перезвоните мне
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            [[pdoMenu?
+                &parents=`0`
+                &level=`1`
+                &outerClass=`main-navigation`
+                &tpl=`@INLINE <li><a [[+classes]] href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>&nbsp`
+            ]]
+        </nav>
+    </div>

@@ -1,0 +1,8 @@
+id: 30
+profile: 1
+action: resource/create
+description: 'Шаблон по умолчанию для целевой страницы'
+active: 1
+constraint: '98'
+constraint_field: parent
+constraint_class: modResource

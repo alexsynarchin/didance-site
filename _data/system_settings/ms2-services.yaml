@@ -1,0 +1,5 @@
+key: ms2_services
+value: '{"cart":[],"order":[],"payment":{"mspyacassapaymenthandler":"{core_path}components\/mspyacassa\/controllers\/mspyacassapaymenthandler.class.php","mspyacassapaymentholdhandler":"{core_path}components\/mspyacassa\/controllers\/mspyacassapaymentholdhandler.class.php"},"delivery":[]}'
+xtype: textarea
+namespace: minishop2
+area: ms2_main

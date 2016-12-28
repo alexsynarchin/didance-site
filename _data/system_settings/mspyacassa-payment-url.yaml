@@ -1,0 +1,4 @@
+key: mspyacassa_payment_url
+value: 'https://money.yandex.ru/eshop.xml'
+namespace: mspyacassa
+area: mspyacassa_main

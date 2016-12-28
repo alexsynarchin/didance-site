@@ -1,0 +1,12 @@
+id: 4742
+set: 28
+action: resource/update
+name: tv12
+description: null
+container: modx-panel-resource
+rule: tvVisible
+value: '0'
+constraint: '3'
+constraint_field: id
+constraint_class: modResource
+rank: 12

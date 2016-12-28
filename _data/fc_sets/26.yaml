@@ -1,0 +1,7 @@
+id: 26
+profile: 2
+action: resource/update
+description: 'Набор правил для работы с главной страницей'
+active: 1
+template: 2
+constraint_class: modResource

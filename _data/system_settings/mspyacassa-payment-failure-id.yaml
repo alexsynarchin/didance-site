@@ -1,0 +1,5 @@
+key: mspyacassa_payment_failure_id
+value: '1'
+xtype: numberfield
+namespace: mspyacassa
+area: mspyacassa_main
